@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: py_pubsub
+Version: 0.0.0
+Summary: Basic ROS 2 publisher and subscriber example
+Maintainer: sachinator
+Maintainer-email: sachinator@example.com
+License: TODO
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

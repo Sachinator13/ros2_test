@@ -1,0 +1,23 @@
+[workspace]
+authors = ["Sachinator13 <mineshsachin@gmail.com>"]
+channels = ["conda-forge", "robostack-jazzy"]
+name = "test"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+build = "colcon build "
+talker = "bash -c 'source install/setup.bash && ros2 run py_pubsub talker'"
+listener = "bash -c 'source install/setup.bash && ros2 run py_pubsub listener'"
+topic-list = "bash -c 'source install/setup.bash && ros2 topic list'"
+topic-echo = "bash -c 'source install/setup.bash && ros2 topic echo /chatter'"
+
+[dependencies]
+ros-jazzy-ros-core = ">=0.11.0,<0.12"
+ros-jazzy-std-msgs = ">=5.3.6,<6"
+ros-jazzy-rclpy = ">=7.1.9,<8"
+ros-jazzy-ament-cmake = ">=2.5.5,<3"
+ros-jazzy-ament-package = ">=0.16.5,<0.17"
+colcon-common-extensions = ">=0.3.0,<0.4"
+setuptools = ">=82.0.1,<83"
+pip = ">=26.1.1,<27"
